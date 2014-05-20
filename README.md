@@ -1,2 +1,4 @@
-JKNN
+Inteligência Artificial
 ====
+
+* Função KNN

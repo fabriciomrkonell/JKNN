@@ -115,6 +115,20 @@ public class JKNN {
     public static void print(int[][] vish){        
         System.out.println("M   B");
         System.out.println(vish[0][0] + " " + vish[0][1] + " M");
-        System.out.println(vish[1][0] + " " + vish[1][1] + " B");
+        System.out.println(vish[1][0] + " " + vish[1][1] + " B");                     
+        precisaoErrado(vish);
+        recallErrado(vish);
+    }
+    
+    public static void precisaoErrado(int[][] vish){ 
+        System.out.println("----------");
+        System.out.println("----------");
+        System.out.println("Precisão: " + ((float)vish[0][0] / ((float)vish[0][0] + (float)vish[1][0])));        
+    }
+    
+    public static void recallErrado(int[][] vish){  
+        System.out.println("----------");
+        System.out.println("----------");        
+        System.out.println("Recall: " + ((float)vish[0][0] / ((float)vish[0][0] + (float)vish[0][1])));
     }
 }

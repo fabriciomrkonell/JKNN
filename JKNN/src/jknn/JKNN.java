@@ -60,10 +60,6 @@ public class JKNN {
 
         ultimos = latt.size() - ((latt.size() / 3) * 2);
 
-        /*for (int i = 0; i < latt.size(); i++) {
-         float[] f = (float[]) latt.get(i);
-         String c = (String) lclass.get(i);            
-         }*/
         for (int j = latt.size() - ultimos; j < latt.size(); j++) {
 
             float menor = 10000000;
